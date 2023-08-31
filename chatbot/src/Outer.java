@@ -190,7 +190,7 @@ public class Outer {
          
          
          
-         
+         System.out.println("hello");
          
          
          }while (!contin.equalsIgnoreCase("exit"));
@@ -203,38 +203,4 @@ public class Outer {
 
 
 
-		/*
-	 case 4:
-		 System.out.println("enter the value of the f
-		 math.number1=keyboard.nextDouble();
-		 System.out.println("enter the value of the secondnumber ");
-		math.number2= keyboard.nextDouble(); 
-		System.out.println(math.product()); 
-		break;
-	 case 3:
-		 System.out.println("enter the value of the firstnumber ");
-		 math.number1=keyboard.nextDouble();
-		 System.out.println("enter the value of the secondnumber ");
-		math.number2= keyboard.nextDouble(); 
-		System.out.println(math.divide()); 
-		break;
 		
-		
-	 case 5:
-		 System.out.println("enter the value of the firstnumber ");
-		 math.number1=keyboard.nextDouble();
-		 System.out.println("enter the value of the secondnumber ");
-		math.number2= keyboard.nextDouble(); 
-		System.out.println(math.modulus()); 
-	 }
-		System.out.println( " do you wish to continue ");
-
-		System.out.println( " what is the password ");
-		keyboard.nextLine();
-		again= keyboard.nextLine();*/
-		
-		
-	
-//	System.out.println(inner.input);
-
-
