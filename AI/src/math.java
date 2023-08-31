@@ -1,4 +1,3 @@
-
 public class math {
   double number1 =0.0;
   double number2 = 0.0;
@@ -53,22 +52,10 @@ public class math {
 		return number;
 	}
 	
+	
+	
+	public double exponents(double number, double power) {
+		return Math.pow(number,power);
 	}
 	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
+	}

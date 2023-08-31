@@ -7,6 +7,7 @@ public class Outer {
     	Trigonometry trigo = new Trigonometry();
         String contin = "NULL";
         String co = "NULL";// the password the user will enter
+        PersistentStringStorage pss = new PersistentStringStorage();
        
         System.out.println("you would need to sign in to use me");
         System.out.println("please enter you first name below ");
@@ -105,8 +106,41 @@ public class Outer {
          keyboard.nextLine();
          contin = keyboard.nextLine();  
          }
+            
+            
+         else if (userQuestion.contains("do you know")||userQuestion.contains("question")){
+        	 pss.setuserinput(userQuestion);
+        	 pss.array_creation();
+           	
+        	 
+        	 
+        	 
+        
+         System.out.println(Inner.name+" Do you wish to continue? Press Enter to continue, or type 'exit' to quit.");
+         keyboard.nextLine();
+         contin = keyboard.nextLine();  
+         }
+            
          
-         
+         else if (userQuestion.contains("power")||userQuestion.contains("exponents")){
+        	 double number = 0;
+        	 double power = 0;
+           	 System.out.println(Inner.name+" I see you would like to know the power of numbers");
+           	 System.out.println(Inner.name+" enter the number for power");
+           	 number = keyboard.nextDouble();
+           	 System.out.println(Inner.name+" enter the power");
+           	 power = keyboard.nextDouble();
+
+           	 
+           
+           	System.out.println( Inner.name+" answer is " + math.exponents(number, power));
+
+         System.out.println(Inner.name+" Do you wish to continue? Press Enter to continue, or type 'exit' to quit.");
+         keyboard.nextLine();
+         contin = keyboard.nextLine();  
+         }
+            
+            
          else if (userQuestion.contains("Trignometry")||userQuestion.contains("trig")){
              System.out.println(Inner.name+" Please enter the value of the angle or the proportion.");
         	 double angle = Math.toRadians(keyboard.nextDouble());  
@@ -143,6 +177,7 @@ public class Outer {
              default :
             	 System.out.print("error");
              }
+             
         	 
         	
          }
@@ -155,51 +190,11 @@ public class Outer {
          
          
          
-         
+         System.out.println("hello");
          
          
          }while (!contin.equalsIgnoreCase("exit"));
 
         keyboard.close();
-        
-        }}
-
-
-
-
-
-		/*
-	 case 4:
-		 System.out.println("enter the value of the f
-		 math.number1=keyboard.nextDouble();
-		 System.out.println("enter the value of the secondnumber ");
-		math.number2= keyboard.nextDouble(); 
-		System.out.println(math.product()); 
-		break;
-	 case 3:
-		 System.out.println("enter the value of the firstnumber ");
-		 math.number1=keyboard.nextDouble();
-		 System.out.println("enter the value of the secondnumber ");
-		math.number2= keyboard.nextDouble(); 
-		System.out.println(math.divide()); 
-		break;
-		
-		
-	 case 5:
-		 System.out.println("enter the value of the firstnumber ");
-		 math.number1=keyboard.nextDouble();
-		 System.out.println("enter the value of the secondnumber ");
-		math.number2= keyboard.nextDouble(); 
-		System.out.println(math.modulus()); 
-	 }
-		System.out.println( " do you wish to continue ");
-
-		System.out.println( " what is the password ");
-		keyboard.nextLine();
-		again= keyboard.nextLine();*/
-		
-		
-	
-//	System.out.println(inner.input);
-
-
+        
+      }}
